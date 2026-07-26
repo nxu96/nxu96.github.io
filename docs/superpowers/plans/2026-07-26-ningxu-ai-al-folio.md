@@ -518,6 +518,17 @@ gh auth status || echo "NEEDS AUTH"
 
 If it prints `NEEDS AUTH`, ask the user to run `! gh auth login` in the session (interactive) before continuing.
 
+- [ ] **Step 0.5: Rename the repo to match the new handle (user-approved)**
+
+```bash
+gh repo rename nxu-robot.github.io -R nxu-robot/nxu96.github.io --yes
+cd /Users/ningxu/workspace/nlog
+git remote set-url origin git@github.com:nxu-robot/nxu-robot.github.io.git
+git ls-remote origin HEAD
+```
+
+Expected: rename succeeds; `ls-remote` prints a hash. This makes it a *user* Pages site again (nxu-robot.github.io will redirect to ningxu.ai). All subsequent `gh api` calls use `repos/nxu-robot/nxu-robot.github.io`.
+
 - [ ] **Step 1: Confirm Pages configuration is the artifact flow**
 
 ```bash
