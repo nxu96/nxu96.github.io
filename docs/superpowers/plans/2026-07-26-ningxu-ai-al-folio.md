@@ -15,7 +15,8 @@
 - InstantNuRec links: project page `https://research.nvidia.com/labs/sil/projects/instant-nurec/`, paper `https://arxiv.org/pdf/2607.14203`, code `https://github.com/nvidia/instant-nurec`, model `https://huggingface.co/nvidia/instant-nurec`, teaser image `https://research.nvidia.com/labs/sil/projects/instant-nurec/assets/teaser-poster.webp`.
 - Paper metadata verified via arXiv API (authors listed verbatim in Task 6).
 - Profile photo source: `/Users/ningxu/workspace/profile/ningxu_profile_square_newbackground.png` (2675×2675).
-- Local tools: Homebrew 5.1.2 present; `ruby` is system 2.6.10; `node`, `magick`/`convert` NOT installed; `sips` available.
+- Local tools: Homebrew 5.1.2 present; `ruby` is system 2.6.10; `node`, `magick`/`convert`, `gh` NOT installed; `sips` available.
+- GitHub account was renamed `nxu96` → `nxu-robot`; the repo is now `nxu-robot/nxu96.github.io` (verified via API redirect). ningxu.ai is live and fronted by Cloudflare (proxied DNS) → GitHub Pages origin; the custom domain survived the rename. The repo is now a *project* site (name no longer matches the handle), which is fine with a custom domain — `baseurl` stays blank.
 
 **Hard constraints (from spec):** No NVIDIA-internal links/email anywhere on the site. Public email is `nxu@umich.edu`. GitHub is `nxu-robot`. Do not push to `main` or deploy until the user approves the local preview (Task 9 gate).
 
@@ -27,12 +28,16 @@
 - Delete: `hugo.yaml`, `content/`, `layouts/`, `archetypes/`, `i18n/`, `data/`, `static/`, `assets/`, `themes/PaperMod` (submodule), `.gitmodules`, `.github/workflows/hugo.yml`, `.hugo_build.lock`, `public/`
 - Keep: `CNAME`, `docs/`, `.claude/`, `.gitignore` (replaced in Task 2)
 
-- [ ] **Step 1: Create the working branch**
+- [ ] **Step 1: Update the remote to the renamed account, then create the working branch**
 
 ```bash
 cd /Users/ningxu/workspace/nlog
+git remote set-url origin git@github.com:nxu-robot/nxu96.github.io.git
+git ls-remote origin HEAD   # verify SSH access to the renamed repo
 git checkout -b al-folio-site
 ```
+
+Expected: `git ls-remote` prints a commit hash (confirms push access path works post-rename).
 
 - [ ] **Step 2: Remove Hugo files from git**
 
@@ -504,13 +509,23 @@ Fetch `http://127.0.0.1:4000/` and verify: title "Ning Xu"; nav has only `about`
 **Files:**
 - Merge: `al-folio-site` → `main`, push
 
+- [ ] **Step 0: Install and authenticate the GitHub CLI**
+
+```bash
+brew install gh
+gh auth status || echo "NEEDS AUTH"
+```
+
+If it prints `NEEDS AUTH`, ask the user to run `! gh auth login` in the session (interactive) before continuing.
+
 - [ ] **Step 1: Confirm Pages configuration is the artifact flow**
 
 ```bash
-gh api repos/nxu96/nxu96.github.io/pages --jq '{build_type: .build_type, cname: .cname, https: .https_enforced}'
+gh api repos/nxu-robot/nxu96.github.io/pages --jq '{build_type: .build_type, cname: .cname, https: .https_enforced}'
 ```
 
-Expected: `build_type` is `workflow`, `cname` is `ningxu.ai`. If `build_type` is `legacy`, run `gh api -X PUT repos/nxu96/nxu96.github.io/pages -f build_type=workflow`.
+Expected: `build_type` is `workflow`, `cname` is `ningxu.ai`. If `build_type` is `legacy`, run `gh api -X PUT repos/nxu-robot/nxu96.github.io/pages -f build_type=workflow`.
+(The repo was renamed from `nxu96/...` — always use the `nxu-robot/nxu96.github.io` path.)
 
 - [ ] **Step 2: Merge and push**
 
@@ -538,6 +553,8 @@ curl -sL https://ningxu.ai | grep -c 'instant-nurec'
 ```
 
 Expected: title contains `Ning Xu`; grep count ≥ 1. Also confirm https redirect works: `curl -sI http://ningxu.ai | head -5` shows a 301 to https.
+
+Note: ningxu.ai is proxied through Cloudflare. If the deploy succeeded but ningxu.ai still shows the old Hugo site (`<title>N'log</title>`), it's Cloudflare's edge cache — ask the user to purge cache in the Cloudflare dashboard (or wait for TTL expiry) rather than re-deploying.
 
 - [ ] **Step 5: Report to user with the live URL.**
 
