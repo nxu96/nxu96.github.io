@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Senior Deep Learning &amp; Computer Vision Engineer at <a href="https://www.nvidia.com/">NVIDIA</a>. Santa Clara, CA.
 
