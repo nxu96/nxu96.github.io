@@ -25,7 +25,11 @@ At NVIDIA, I work on neural reconstruction for autonomous vehicle simulation. Mo
 
 I am broadly interested in spatial intelligence: 3D reconstruction, geometry foundation models, and neural simulation that closes the loop between the physical and digital worlds. I believe grounding robot foundation models in 3D geometry is key to building agents that can truly reason about — and act in — the physical world.
 
-## selected projects
+## [Selected Publications]({{ '/publications/' | relative_url }}){: style="color: inherit"}
+
+{% include selected_papers.liquid %}
+
+## Selected Projects
 
 <div class="row">
   <div class="col-sm-4 mt-3">
