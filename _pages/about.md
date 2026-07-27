@@ -2,33 +2,51 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Senior Deep Learning &amp; Computer Vision Engineer at <a href="https://www.nvidia.com/">NVIDIA</a>. Santa Clara, CA.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Senior Deep Learning and Computer Vision Engineer at NVIDIA, working on neural reconstruction for autonomous vehicle simulation. Most recently I helped bring [Instant NuRec](https://research.nvidia.com/labs/sil/projects/instant-nurec/) — a feed-forward 3D Gaussian Splatting model — into NVIDIA's AV simulation stack. Previously, I built online HD mapping and multi-city-scale 3D SLAM systems at [Nuro](https://www.nuro.ai/), and centimeter-accurate localization at [Motional](https://motional.com/). I received my M.S. in Robotics from the University of Michigan, advised by Prof. Chad Jenkins, and my B.E. from Beihang University.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am interested in spatial intelligence, 3D reconstruction, and geometry-grounded foundation models for robots.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+## selected projects
+
+<div class="row">
+  <div class="col-sm-4 mt-3">
+    <a href="https://research.nvidia.com/labs/sil/projects/instant-nurec/">
+      <img src="/assets/img/instant-nurec-teaser.webp" class="img-fluid rounded z-depth-1" alt="Instant NuRec teaser" />
+    </a>
+  </div>
+  <div class="col-sm-8 mt-3">
+    <b>Instant NuRec: Feed-Forward 3D Gaussian Reconstruction for Driving Scene Simulation</b><br />
+    Turns a short multi-camera driving log into a fully simulatable, layered 3DGS world (static, dynamic, sky) in a single forward pass — roughly 1.5 seconds per scene. I work on its integration into NVIDIA's AV simulation pipeline and the LiDAR-free NuRec release.<br />
+    <a href="https://research.nvidia.com/labs/sil/projects/instant-nurec/">Project Page</a> ·
+    <a href="https://arxiv.org/pdf/2607.14203">Paper</a> ·
+    <a href="https://github.com/nvidia/instant-nurec">Code</a> ·
+    <a href="https://huggingface.co/nvidia/instant-nurec">🤗 Model</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12 mt-4">
+    <b>HD Mapping &amp; 3D SLAM at Nuro</b><br />
+    Online DETR-based HD map construction in a unified camera–LiDAR BEV framework, fusion of prior map data with live sensor streams for robustness to real-world map changes, and a multi-city-scale 3D mapping and SLAM pipeline.<br />
+    <a href="https://www.nuro.ai/blog/unified-perception-model">Unified Perception</a> ·
+    <a href="https://www.nuro.ai/blog/exploring-hd-mapping-that-scales">HD Mapping that Scales</a> ·
+    <a href="https://www.nuro.ai/blog/the-nuro-autonomy-stack">Nuro Autonomy Stack</a>
+  </div>
+</div>
