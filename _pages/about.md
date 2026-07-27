@@ -32,7 +32,12 @@ I am broadly interested in spatial intelligence: 3D reconstruction, geometry fou
 ## Selected Projects
 
 <div class="row">
-  <div class="col-sm-12 mt-3">
+  <div class="col-sm-4 mt-3">
+    <a href="https://www.nuro.ai/blog/exploring-hd-mapping-that-scales">
+      <img src="/assets/img/nuro-hd-mapping.gif" class="img-fluid rounded z-depth-1" alt="Nuro HD mapping" />
+    </a>
+  </div>
+  <div class="col-sm-8 mt-3">
     <b>HD Mapping &amp; 3D SLAM at Nuro</b><br />
     Online DETR-based HD map construction in a unified camera–LiDAR BEV framework, fusion of prior map data with live sensor streams for robustness to real-world map changes, and a multi-city-scale 3D mapping and SLAM pipeline.<br />
     <a href="https://www.nuro.ai/blog/unified-perception-model">Unified Perception</a> ·
