@@ -33,6 +33,19 @@ I am broadly interested in spatial intelligence: 3D reconstruction, geometry fou
 
 <div class="row">
   <div class="col-sm-4 mt-3">
+    <a href="https://www.youtube.com/watch?v=e3dfXj6ATA0">
+      <img src="/assets/img/nvidia-neural-reconstruction.gif" class="img-fluid rounded z-depth-1" alt="NVIDIA neural reconstruction for autonomous vehicles" />
+    </a>
+  </div>
+  <div class="col-sm-8 mt-3">
+    <b>Neural Reconstruction for Autonomous Vehicles at NVIDIA</b><br />
+    Turning real-world driving logs into fully simulatable 3D Gaussian Splatting worlds for closed-loop AV simulation with NVIDIA Omniverse NuRec — from integrating the feed-forward Instant NuRec model into the production reconstruction pipeline to delivering the LiDAR-free NuRec release.<br />
+    <a href="https://www.youtube.com/watch?v=e3dfXj6ATA0">Video</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4 mt-3">
     <a href="https://www.nuro.ai/blog/unified-perception-model">
       <img src="/assets/img/nuro-unified-perception.gif" class="img-fluid rounded z-depth-1" alt="Nuro unified perception model" />
     </a>
