@@ -8,7 +8,7 @@ middle_name:
 last_name: Xu
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Ning Xu — Senior Machine Learning Engineer at NVIDIA. Spatial intelligence, 3D reconstruction, and autonomous vehicles.
+  Ning Xu — Senior Machine Learning Engineer at NVIDIA. Spatial intelligence, 3D/4D reconstruction, autonomous vehicles and robotics.
 footer_text:
 keywords: Ning Xu, computer vision, 3D reconstruction, gaussian splatting, SLAM, autonomous vehicles # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
