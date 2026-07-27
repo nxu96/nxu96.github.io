@@ -19,9 +19,11 @@ latest_posts:
   enabled: false
 ---
 
-I am a Senior Machine Learning Engineer at NVIDIA, working on neural reconstruction for autonomous vehicle simulation. Most recently I helped bring [Instant NuRec](https://research.nvidia.com/labs/sil/projects/instant-nurec/) — a feed-forward 3D Gaussian Splatting model — into NVIDIA's AV simulation stack. Previously, I built online HD mapping and multi-city-scale 3D SLAM systems at [Nuro](https://www.nuro.ai/), and centimeter-accurate localization at [Motional](https://motional.com/). I received my M.S. in Robotics from the University of Michigan, advised by [Prof. Chad Jenkins](https://web.eecs.umich.edu/~ocj/), and my B.E. from Beihang University.
+I am a Senior Machine Learning Engineer at NVIDIA. My work centers on one goal: helping physical agents — autonomous vehicles and robots — perceive and understand the 3D world they move through. Over the past six years I have built spatial perception systems across the autonomy stack, from centimeter-accurate localization, to city-scale mapping, to neural scene reconstruction.
 
-I am interested in spatial intelligence, 3D reconstruction, and geometry-grounded foundation models for robots.
+At NVIDIA, I work on neural reconstruction for autonomous vehicle simulation. Most recently I helped bring [Instant NuRec](https://research.nvidia.com/labs/sil/projects/instant-nurec/) — a feed-forward 3D Gaussian Splatting model that turns a short multi-camera driving log into a fully simulatable 3D world — into NVIDIA's AV simulation stack. Previously, I developed transformer-based online HD mapping and multi-city-scale 3D SLAM systems at [Nuro](https://www.nuro.ai/), and engineered centimeter-accurate localization for production robotaxis at [Motional](https://motional.com/). I received my M.S. in Robotics from the University of Michigan, advised by [Prof. Chad Jenkins](https://web.eecs.umich.edu/~ocj/), and my B.E. from Beihang University.
+
+I am broadly interested in spatial intelligence: 3D reconstruction, geometry foundation models, and neural simulation that closes the loop between the physical and digital worlds. I believe grounding robot foundation models in 3D geometry is key to building agents that can truly reason about — and act in — the physical world.
 
 ## selected projects
 
