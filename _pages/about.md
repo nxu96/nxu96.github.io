@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Senior Machine Learning Engineer at <a href="https://www.nvidia.com/">NVIDIA</a>. Santa Clara, CA.
+subtitle: Senior Machine Learning Engineer at <a href="https://www.nvidia.com/">NVIDIA</a>.
 
 profile:
   align: right

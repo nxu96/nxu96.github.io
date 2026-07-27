@@ -251,12 +251,11 @@ let transTheme = () => {
 };
 
 // Determine the expected state of the theme toggle, which can be "dark" or "light".
-// On first visit, default to the user's system preference.
+// On first visit, default to the light theme.
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
   if (themeSetting != "dark" && themeSetting != "light") {
-    const userPref = window.matchMedia;
-    themeSetting = userPref && userPref("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    themeSetting = "light";
   }
   return themeSetting;
 };
