@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Senior Deep Learning &amp; Computer Vision Engineer at <a href="https://www.nvidia.com/">NVIDIA</a>. Santa Clara, CA.
+subtitle: Senior Machine Learning Engineer at <a href="https://www.nvidia.com/">NVIDIA</a>. Santa Clara, CA.
 
 profile:
   align: right
@@ -19,7 +19,7 @@ latest_posts:
   enabled: false
 ---
 
-I am a Senior Deep Learning and Computer Vision Engineer at NVIDIA, working on neural reconstruction for autonomous vehicle simulation. Most recently I helped bring [Instant NuRec](https://research.nvidia.com/labs/sil/projects/instant-nurec/) — a feed-forward 3D Gaussian Splatting model — into NVIDIA's AV simulation stack. Previously, I built online HD mapping and multi-city-scale 3D SLAM systems at [Nuro](https://www.nuro.ai/), and centimeter-accurate localization at [Motional](https://motional.com/). I received my M.S. in Robotics from the University of Michigan, advised by Prof. Chad Jenkins, and my B.E. from Beihang University.
+I am a Senior Machine Learning Engineer at NVIDIA, working on neural reconstruction for autonomous vehicle simulation. Most recently I helped bring [Instant NuRec](https://research.nvidia.com/labs/sil/projects/instant-nurec/) — a feed-forward 3D Gaussian Splatting model — into NVIDIA's AV simulation stack. Previously, I built online HD mapping and multi-city-scale 3D SLAM systems at [Nuro](https://www.nuro.ai/), and centimeter-accurate localization at [Motional](https://motional.com/). I received my M.S. in Robotics from the University of Michigan, advised by [Prof. Chad Jenkins](https://web.eecs.umich.edu/~ocj/), and my B.E. from Beihang University.
 
 I am interested in spatial intelligence, 3D reconstruction, and geometry-grounded foundation models for robots.
 
