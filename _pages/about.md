@@ -19,11 +19,11 @@ latest_posts:
   enabled: false
 ---
 
-I am a Senior Machine Learning Engineer at NVIDIA. My work centers on one goal: helping physical agents — autonomous vehicles and robots — perceive and understand the 3D world they move through. Over the past six years I have built spatial perception systems across the autonomy stack, from centimeter-accurate localization, to city-scale mapping, to neural scene reconstruction.
+I am a Senior Machine Learning Engineer at NVIDIA. My work centers on one goal: helping physical agents — autonomous vehicles and robots — perceive and understand the 3D world they move through. Over the past six years I have built spatial perception systems across the autonomy stack, from centimeter-accurate localization, to city-scale mapping and online mapping, to neural scene reconstruction.
 
-At NVIDIA, I work on neural reconstruction for autonomous vehicle simulation. Most recently I helped bring [Instant NuRec](https://research.nvidia.com/labs/sil/projects/instant-nurec/) — a feed-forward 3D Gaussian Splatting model that turns a short multi-camera driving log into a fully simulatable 3D world — into NVIDIA's AV simulation stack. Previously, I developed transformer-based online HD mapping and multi-city-scale 3D SLAM systems at [Nuro](https://www.nuro.ai/), and engineered centimeter-accurate localization for production robotaxis at [Motional](https://motional.com/). I received my M.S. in Robotics from the University of Michigan, advised by [Prof. Chad Jenkins](https://web.eecs.umich.edu/~ocj/), and my B.E. from Beihang University.
+At NVIDIA, I work on neural reconstruction for autonomous vehicle simulation. Most recently I helped bring [Instant NuRec](https://research.nvidia.com/labs/sil/projects/instant-nurec/) — a feed-forward 3D Gaussian Splatting model that turns a short multi-camera driving log into a fully simulatable 3D world — into NVIDIA's AV simulation stack. Previously, I developed BEV-transformer online HD mapping models and multi-city-scale 3D SLAM systems at [Nuro](https://www.nuro.ai/), and engineered centimeter-accurate localization for production robotaxis at [Motional](https://motional.com/). I received my M.S. in Robotics from the University of Michigan, advised by [Prof. Chad Jenkins](https://web.eecs.umich.edu/~ocj/), and my B.E. from Beihang University.
 
-I am broadly interested in spatial intelligence: 3D reconstruction, geometry foundation models, and neural simulation that closes the loop between the physical and digital worlds. I believe grounding robot foundation models in 3D geometry is key to building agents that can truly reason about — and act in — the physical world.
+I am broadly interested in spatial intelligence: 3D/4D reconstruction, generative reconstruction, geometry foundation models, and neural simulation that closes the loop between the physical and digital worlds. I believe grounding robot foundation models in 3D geometry is key to building agents that can truly reason about — and act in — the physical world.
 
 ## [Selected Publications]({{ '/publications/' | relative_url }}){: style="color: inherit"}
 
@@ -39,7 +39,7 @@ I am broadly interested in spatial intelligence: 3D reconstruction, geometry fou
   </div>
   <div class="col-sm-8 mt-3">
     <b>Neural Reconstruction for Autonomous Vehicles at NVIDIA</b><br />
-    Turning real-world driving logs into fully simulatable 3D Gaussian Splatting worlds for closed-loop AV simulation with NVIDIA Omniverse NuRec — from integrating the feed-forward Instant NuRec model into the production reconstruction pipeline to delivering the LiDAR-free NuRec release.<br />
+    Turning real-world driving logs into fully simulatable 3D Gaussian Splatting worlds for closed-loop AV simulation with NVIDIA Omniverse NuRec — from integrating the feed-forward Instant NuRec model into the production reconstruction pipeline to delivering the LiDAR-free NuRec solution.<br />
     <a href="https://www.youtube.com/watch?v=e3dfXj6ATA0">Video</a>
   </div>
 </div>
@@ -52,7 +52,7 @@ I am broadly interested in spatial intelligence: 3D reconstruction, geometry fou
   </div>
   <div class="col-sm-8 mt-3">
     <b>Unified Perception Model at Nuro</b><br />
-    Prototyped and developed a DETR-based DNN model for online HD map construction, integrated within Nuro's unified camera–LiDAR BEV perception framework — accelerating the deployment of transformer-based perception models onto the road.<br />
+    Prototyped and developed a BEV-transformer model for online HD map construction, integrated within Nuro's unified camera–LiDAR BEV perception framework — accelerating the deployment of multi-task perception models onto the road.<br />
     <a href="https://www.nuro.ai/blog/unified-perception-model">Blog</a>
   </div>
 </div>
