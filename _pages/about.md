@@ -47,7 +47,7 @@ I am broadly interested in spatial intelligence: 3D reconstruction, geometry fou
 <div class="row">
   <div class="col-sm-4 mt-3">
     <a href="https://www.nuro.ai/blog/exploring-hd-mapping-that-scales">
-      <img src="/assets/img/nuro-hd-mapping.gif" class="img-fluid rounded z-depth-1" alt="Nuro scalable online mapping" />
+      <img src="/assets/img/nuro-online-mapping.gif" class="img-fluid rounded z-depth-1" alt="Nuro scalable online mapping" />
     </a>
   </div>
   <div class="col-sm-8 mt-3">
