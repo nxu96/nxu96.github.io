@@ -1,0 +1,17 @@
+// Social icons under the profile photo: compact row (reference: yaqi-xie.me)
+.profile .social .contact-icons {
+  font-size: 1.5rem;
+
+  a {
+    padding: 0 0.3rem;
+  }
+}
+
+// Underline (not italicize) my own name in publication author lists.
+// The theme already draws a dashed border-bottom on the self-author <em>;
+// make it a single solid underline and drop the italics.
+.publications .author em {
+  font-style: normal;
+  text-decoration: underline;
+  border-bottom: none !important;
+}
