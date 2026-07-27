@@ -32,23 +32,7 @@ I am broadly interested in spatial intelligence: 3D reconstruction, geometry fou
 ## Selected Projects
 
 <div class="row">
-  <div class="col-sm-4 mt-3">
-    <a href="https://research.nvidia.com/labs/sil/projects/instant-nurec/">
-      <img src="/assets/img/instant-nurec-teaser.webp" class="img-fluid rounded z-depth-1" alt="Instant NuRec teaser" />
-    </a>
-  </div>
-  <div class="col-sm-8 mt-3">
-    <b>Instant NuRec: Feed-Forward 3D Gaussian Reconstruction for Driving Scene Simulation</b><br />
-    Turns a short multi-camera driving log into a fully simulatable, layered 3DGS world (static, dynamic, sky) in a single forward pass — roughly 1.5 seconds per scene. I work on its integration into NVIDIA's AV simulation pipeline and the LiDAR-free NuRec release.<br />
-    <a href="https://research.nvidia.com/labs/sil/projects/instant-nurec/">Project Page</a> ·
-    <a href="https://arxiv.org/pdf/2607.14203">Paper</a> ·
-    <a href="https://github.com/nvidia/instant-nurec">Code</a> ·
-    <a href="https://huggingface.co/nvidia/instant-nurec">🤗 Model</a>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-sm-12 mt-4">
+  <div class="col-sm-12 mt-3">
     <b>HD Mapping &amp; 3D SLAM at Nuro</b><br />
     Online DETR-based HD map construction in a unified camera–LiDAR BEV framework, fusion of prior map data with live sensor streams for robustness to real-world map changes, and a multi-city-scale 3D mapping and SLAM pipeline.<br />
     <a href="https://www.nuro.ai/blog/unified-perception-model">Unified Perception</a> ·
