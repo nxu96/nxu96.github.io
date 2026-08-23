@@ -8,9 +8,9 @@ middle_name:
 last_name: Xu
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Ning Xu — Senior Machine Learning Engineer at NVIDIA. Spatial intelligence, 3D/4D reconstruction, autonomous vehicles and robotics.
+  Ning Xu — Senior Machine Learning Engineer at NVIDIA. World simulation, interactive world models, 3D/4D reconstruction, robotics and autonomous vehicles.
 footer_text:
-keywords: Ning Xu, computer vision, 3D reconstruction, gaussian splatting, SLAM, autonomous vehicles # add your own keywords or leave empty
+keywords: Ning Xu, world models, world simulation, action-conditioned generation, video generation, neural simulation, generative reconstruction, 3D reconstruction, 4D reconstruction, Gaussian splatting, robotics, autonomous vehicles # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: robot_avatar.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
