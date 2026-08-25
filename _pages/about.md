@@ -23,7 +23,7 @@ I am a Senior Machine Learning Engineer at NVIDIA, working on world simulation f
 
 At NVIDIA, I helped bring [Instant NuRec](https://research.nvidia.com/labs/sil/projects/instant-nurec/) — a feed-forward 3D Gaussian Splatting model that turns a short multi-camera driving log into a fully simulatable 3D world — into NVIDIA's autonomous vehicle simulation stack. Previously, at [Nuro](https://www.nuro.ai/), I developed BEV-transformer models for online HD mapping and 3D SLAM systems operating at multi-city scale. At [Motional](https://motional.com/), I engineered centimeter-accurate localization for production robotaxis. I received my M.S. in Robotics from the University of Michigan, advised by [Prof. Chad Jenkins](https://web.eecs.umich.edu/~ocj/), and my B.E. from Beihang University.
 
-I am particularly interested in action-conditioned world models, 3D/4D generative reconstruction, and data-driven simulation. I believe world models can create diverse, controllable, and closed-loop simulation environments for training and evaluating robots and autonomous vehicles at scale.
+I am particularly interested in action-conditioned world models, 3D/4D generative reconstruction, and data-driven simulation. I believe world models will be key to creating diverse, controllable, and closed-loop simulation environments for training and evaluating robots and autonomous vehicles at scale.
 
 ## [Selected Publications]({{ '/publications/' | relative_url }}){: style="color: inherit"}
 
